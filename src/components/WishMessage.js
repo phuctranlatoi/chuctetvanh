@@ -104,9 +104,6 @@ const WishMessage = () => {
 
         <motion.p className="hint-text" variants={itemVariants}>
           {clickCount === 0 && "Tìm bao lì xì để nhận lời nhắn đặc biệt ạaaaaa"}
-          {clickCount === 1 && "Haha! Bắt được chưa nào? 😄"}
-          {clickCount === 2 && "Gần rồi! Thêm 1 lần nữa thôi! 🎯"}
-          {envelopeOpened && "Bấm vào lời nhắn để đóng lại nhé!"}
         </motion.p>
       </div>
 
