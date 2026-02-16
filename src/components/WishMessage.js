@@ -43,11 +43,11 @@ const WishMessage = () => {
       const newClickCount = clickCount + 1;
       setClickCount(newClickCount);
 
-      if (newClickCount < 3) {
-        // Chưa đủ 3 lần, chạy sang vị trí khác
+      if (newClickCount < 2) {
+        // Chưa đủ 2 lần, chạy sang vị trí khác
         setEnvelopePosition(getRandomPosition());
       } else {
-        // Đủ 3 lần, mở bao lì xì
+        // Đủ 2 lần, mở bao lì xì
         setEnvelopeOpened(true);
       }
     }
@@ -103,7 +103,7 @@ const WishMessage = () => {
         </motion.div>
 
         <motion.p className="hint-text" variants={itemVariants}>
-          {clickCount === 0 && "Tìm bao lì xì để nhận lời nhắn đặc biệt ạaaaaa"}
+          {clickCount === 0 && "Nhấn vào bao lì xì để nhận lời nhắn đặc biệttt"}
         </motion.p>
       </div>
 
@@ -155,7 +155,7 @@ const WishMessage = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <button className="close-button" onClick={handleEnvelopeClick}>✕</button>
-              <p>Phúc thương Vân Anh nhiều lắm á nhaaa 💕</p>
+              <p>Mong rằng 2026 mình sẽ gặp nhau nhiều hơn và gần nhau hơn nha hihihi, Phúc thương Vân Anh nhiều lắm á 💕</p>
             </motion.div>
           </motion.div>
         )}
